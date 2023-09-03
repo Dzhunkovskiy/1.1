@@ -44,6 +44,8 @@ a {
 .page {
     padding: 97px 0;
     display: flex;
+    background-color: #EFF6FF;
+    color: #2A4A5C;
 }
 
 .container {
@@ -76,6 +78,7 @@ a {
 .reg-form__description {
     margin-bottom: 56px;
     font-size: 19px;
+    color: #7B8A92;
 }
 
 .links-list {
@@ -188,6 +191,7 @@ a {
 .reg-form__description--small {
     margin-bottom: 45px;
     font-size: 14px;
+    color: #7B8A92;
 }
 
 .survey {
@@ -232,8 +236,10 @@ a {
     top: 50px;
     max-width: 270px;
     font-size: 14px;
+    color: #7B8A92;
     line-height: 1.2;
-    box-shadow: 0 0 10px 5px #c4c4c4;
+    box-shadow: 0 0 15px 5px #EEEEEE;
+    background-color: #fff;
     border-radius: 10px;   
     opacity: 0;
 }
@@ -284,3 +290,4 @@ a {
 .reg-form__button:hover {
     background-color: orange;
 }
+
