@@ -1,0 +1,10 @@
+{
+    "html.hover.references": false,
+    "css.hover.references": false,
+    "less.hover.references": false,
+    "scss.hover.references": false,
+    "editor.inlayHints.enabled": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.parameterHints.cycle": false,
+    "workbench.editor.untitled.hint": "hidden"
+}

@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Barlow-Regular"),
+         url("../fonts/Barlow-Regular-webfont.woff") format("woff")
+}
+
+:root {
+    --light-gray: rgb(229, 229, 229);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: "Barlow", sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    padding: 97px 0;
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1447px;
+    display: flex;
+}
+.promo {
+    padding: 42px 52px;
+    flex-basis: 56%;
+    background-image: url(/img/bg.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.promo__logo {
+    width: 130px;
+    height: auto;    
+}
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    padding: 115px 72px;
+    flex-basis: 50%;
+}
+.reg-form__heading {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.reg-form__description {
+    margin-bottom: 56px;
+    font-size: 19px;
+}
+
+.links-list {
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-list__item {
+    display: flex;
+}
+
+.link-list__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.link-list__link {
+    padding: 13px 57px 13px 11px;
+    display: flex;
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+}
+
+.link-list__link:hover,
+.link-list__link:focus {
+    filter: brightness(1.2);    
+}
+
+.link-list__link:active {
+    scale: 0.9;    
+}
+
+.facebook-link {
+    background-color: rgb(37, 91, 155);
+}
+
+.linkedin-link {
+    background-color: rgb(0, 118, 182);
+}
+
+.link-list__icon {
+    margin-right: 18px;
+    display: block;
+}
+.reg-form__divider {
+    margin-bottom: 47px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    align-self: center;
+}
+
+.reg-form__divider::before {
+    content: '';
+    margin-right: 10px;
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: var(--light-gray);
+}
+
+.reg-form__divider::after {
+    content: '';
+    margin-right: 10px;
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: var(--light-gray);
+}
+
+.reg-form__get-contact {
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-form__input:first-child {
+    margin-right: 40px;
+}
+
+.reg-form__input {
+    border: 1px solid #c4c4c4;
+    padding: 18px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.reg-form__input:hover.reg-form__input::placeholder{
+    color: blue;
+}
+
+.reg-form__input:focus {
+    outline: none;
+    border-left: 1px solid blue;
+} 
+
+.reg-form__input::placeholder {
+    position: absolute;
+    top: 3px;
+    left: 6px;
+}
+
+.reg-form__heading--small {
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.reg-form__description--small {
+    margin-bottom: 45px;
+    font-size: 14px;
+}
+
+.survey {
+    margin-bottom: 140px;
+    position: relative;
+    display: flex;
+    border: none;
+}
+.survey__option {
+    margin-right: 14px;
+    transform: scale(1.2);
+}
+
+.survey__label {
+    margin-right: 5px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.survey__hint-icon:last-of-type {
+    margin-right: 0;
+}
+
+.survey__hint-icon {
+    padding-top: 10px;
+    margin-right: 60px;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: default;
+    color: #ababab;
+    transition: color 0.2s linear;
+}
+
+.survey__hint-icon:hover {
+    color: rgb(103, 103, 235);
+}
+
+.survey__hint {
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 1.2;
+    box-shadow: 0 0 10px 5px #c4c4c4;
+    border-radius: 10px;   
+    opacity: 0;
+}
+
+.survey__hint-icon:hover + .survey__hint {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.agreement-check {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.agreement-check__input {
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.agreement-check__input:hover {
+    opacity: 1;
+}
+
+.agreement-check__input:checked + .agreement-check__description {
+    color: #000;
+}
+
+.agreement-check__description {
+    font-size: 12px;
+    color: #9a9a9a;
+}
+
+.agreement-check__link {
+    text-decoration: underline;
+    color: blue;
+}
+.reg-form__button {
+    padding: 12px 75px;
+    align-self: flex-start;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(54, 152, 251);
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.reg-form__button:hover {
+    background-color: orange;
+}
