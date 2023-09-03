@@ -56,7 +56,7 @@ a {
 .promo {
     padding: 42px 52px;
     flex-basis: 56%;
-    background-image: url(/img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
